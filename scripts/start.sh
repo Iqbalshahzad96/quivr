@@ -14,8 +14,5 @@ if ! pip show gpt4all > /dev/null; then
     fi
 fi
 
-# Move to the code directory
-cd /code
-
 # Start your app
 uvicorn main:app --reload --host 0.0.0.0 --port 5050
